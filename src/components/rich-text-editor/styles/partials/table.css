@@ -1,0 +1,31 @@
+.minimal-tiptap-editor .ProseMirror {
+    table {
+        @apply border border-collapse m-0 overflow-hidden table-fixed w-full;
+
+        td,
+        th {
+            @apply border min-w-1 p-2 box-border relative text-left align-middle;
+
+            * {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        th {
+            @apply bg-muted/40 font-bold;
+        }
+
+        .selectedCell:after {
+            @apply bg-muted/10 absolute z-10 pointer-events-none inset-0 content-[''];
+        }
+
+        .column-resize-handle {
+            @apply bg-primary absolute top-0 -bottom-0.5 -right-0.5 z-10 pointer-events-none w-1;
+        }
+    }
+
+    .tableWrapper {
+        margin: 1.5rem 0;
+        overflow-x: auto;
+    }
+}
