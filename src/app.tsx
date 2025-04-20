@@ -1,12 +1,14 @@
 import AppNavbar from '@/components/app-navbar.tsx'
 import { RichTextEditor } from '@/components/rich-text-editor'
 import { Container } from '@/components/ui'
+import { Hero } from './components/custom/hero'
 import content from './data/content.json'
 
 export default function App() {
     return (
         <AppNavbar>
             <Container className='@xl:py-12 py-6'>
+                <Hero />
                 <RichTextEditor
                     value={content}
                     className={'w-full'}

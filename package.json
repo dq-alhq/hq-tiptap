@@ -35,7 +35,6 @@
         "@tiptap/starter-kit": "^2.11.7",
         "hq-icons": "^0.0.10",
         "motion": "^12.7.4",
-        "prism-code-editor-lightweight": "^0.0.3",
         "react": "^19.1.0",
         "react-aria-components": "^1.8.0",
         "react-dom": "^19.1.0",

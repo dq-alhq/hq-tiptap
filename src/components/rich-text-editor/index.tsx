@@ -27,7 +27,7 @@ export interface TiptapProps extends Omit<UseTiptapEditorProps, 'onUpdate'> {
 const EditorToolbar = ({ editor, state }: { editor: Editor; state: TiptapState | null }) => (
     <Toolbar
         orientation='horizontal'
-        className='p-2 mb-1 sm:mt-1 overflow-auto sticky w-[calc(100%-8px)] rounded-lg border shadow-sm bottom-1 sm:bottom-auto sm:top-1 bg-bg z-30'
+        className='p-2 mb-1 sm:mt-1 shrink-0 overflow-auto sticky w-[calc(100%-8px)] rounded-lg border shadow-sm bottom-1 sm:bottom-auto sm:top-1 bg-bg z-30'
     >
         <TextStyle editor={editor} levels={[1, 2, 3, 4, 5, 6]} state={state} />
         <Toolbar.Separator />

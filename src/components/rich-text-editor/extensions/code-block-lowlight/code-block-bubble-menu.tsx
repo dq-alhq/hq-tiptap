@@ -7,11 +7,6 @@ import type { Key } from 'react-aria-components'
 import { type GetReferenceClientRect, sticky } from 'tippy.js'
 import { langs } from './langs'
 
-const _languages = [
-    { id: 'javascript', label: 'JavaScript' },
-    { id: 'php', label: 'PHP' },
-]
-
 export const CodeBlockBubbleMenu = ({ editor }: { editor: Editor }) => {
     const [language, setLanguage] = React.useState('')
 
